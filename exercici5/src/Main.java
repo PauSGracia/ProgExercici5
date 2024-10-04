@@ -67,7 +67,7 @@ public class Main {
         }
 
         //Calculate the devaluation
-        finalPrice = totalCarPrice * (1.0 - devalue * numKm);
+        finalPrice = totalCarPrice * (1.0 - (devalue / 100.0) * numKm);
 
         //print out the devaluation
         System.out.println("Your The Volkswagen initial price was " + totalCarPrice);
